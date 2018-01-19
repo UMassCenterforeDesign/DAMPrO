@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1516392250066" name="http://www.semanticweb.org/tom/ontologies/2018/0/untitled-ontology-746" uri="DAMPrO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516392250066" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl" uri="AM_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516392250066" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/SLM_rules.owl" uri="SLM_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516392250066" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl" uri="dmls_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516392250066" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/fdm_rules.owl" uri="fdm_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516392250066" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/polyjet_rules.owl" uri="polyjet_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516392250066" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/sls_rules.owl" uri="sls_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516394443917" name="http://www.semanticweb.org/tom/ontologies/2018/0/untitled-ontology-746" uri="DAMPrO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516394443917" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl" uri="AM_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516394443917" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/SLM_rules.owl" uri="SLM_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516394443917" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl" uri="dmls_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516394443917" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/fdm_rules.owl" uri="fdm_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516394443917" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/polyjet_rules.owl" uri="polyjet_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516394443917" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/sls_rules.owl" uri="sls_rules.owl"/>
     </group>
 </catalog>

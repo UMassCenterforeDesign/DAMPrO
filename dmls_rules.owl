@@ -12,18 +12,12 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0</Import>
-    <Declaration>
-        <Class IRI="#radius_less_than_0.5_mm"/>
-    </Declaration>
+    <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl</Import>
     <Declaration>
         <Class IRI="#wall_less_than_1_mm_thick"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#radius_less_than_0.5_mm_for_DMLS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#hole_greater_than_6_mm_diameter"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
     </Declaration>
     <Declaration>
         <Class IRI="#overhang_greater_than_20_degrees_for_dmls"/>
@@ -32,76 +26,37 @@
         <Class IRI="#overhang_greater_than_20_degrees"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#hole_greater_than_6_mm_for_dmls"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#wall_less_than_1_mm_for_dmls"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
     </Declaration>
     <Declaration>
         <Class IRI="#radius_specification"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#material_form_specification"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+        <Class IRI="#wall_less_than_1_mm_for_dmls"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+        <Class IRI="#radius_less_than_0.5_mm_for_DMLS"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
+        <Class IRI="#radius_less_than_0.5_mm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thickness"/>
+        <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#specifies_value"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
+        <Class IRI="#hole_greater_than_6_mm_diameter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/presentation/ontologies/2017/3/BFO_MSDL#direct_metal_laser_sintering_process"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#angularity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
+        <Class IRI="#hole_greater_than_6_mm_for_dmls"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Length"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#specifies_value"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#angled_overhang"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#angularity"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_value"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_manufactured_not_perpendicular_to_build_plate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Diameter"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#hole_greater_than_6_mm_diameter"/>
@@ -113,7 +68,7 @@
                     <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Diameter"/>
                 </ObjectSomeValuesFrom>
                 <DataSomeValuesFrom>
-                    <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#specifies_value"/>
+                    <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#specifies_value"/>
                     <DatatypeRestriction>
                         <Datatype abbreviatedIRI="xsd:decimal"/>
                         <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -140,7 +95,7 @@
                         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                            <Class IRI="http://www.semanticweb.org/presentation/ontologies/2017/3/BFO_MSDL#direct_metal_laser_sintering_process"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
                         </ObjectSomeValuesFrom>
                     </ObjectSomeValuesFrom>
                 </ObjectSomeValuesFrom>
@@ -157,10 +112,10 @@
                     <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
                     <ObjectSomeValuesFrom>
                         <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#angularity"/>
+                        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#angularity"/>
                     </ObjectSomeValuesFrom>
                     <DataSomeValuesFrom>
-                        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#specifies_value"/>
+                        <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#specifies_value"/>
                         <DatatypeRestriction>
                             <Datatype abbreviatedIRI="xsd:decimal"/>
                             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -184,7 +139,7 @@
                         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                            <Class IRI="http://www.semanticweb.org/presentation/ontologies/2017/3/BFO_MSDL#direct_metal_laser_sintering_process"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
                         </ObjectSomeValuesFrom>
                     </ObjectSomeValuesFrom>
                 </ObjectSomeValuesFrom>
@@ -196,7 +151,7 @@
         <ObjectIntersectionOf>
             <Class IRI="#radius_specification"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#specifies_value"/>
+                <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#specifies_value"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:decimal"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -218,7 +173,7 @@
                         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                            <Class IRI="http://www.semanticweb.org/presentation/ontologies/2017/3/BFO_MSDL#direct_metal_laser_sintering_process"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
                         </ObjectSomeValuesFrom>
                     </ObjectSomeValuesFrom>
                 </ObjectSomeValuesFrom>
@@ -231,7 +186,7 @@
             <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -247,7 +202,7 @@
                         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                            <Class IRI="http://www.semanticweb.org/presentation/ontologies/2017/3/BFO_MSDL#direct_metal_laser_sintering_process"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
                         </ObjectSomeValuesFrom>
                     </ObjectSomeValuesFrom>
                 </ObjectSomeValuesFrom>

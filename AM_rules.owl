@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules"/>
+    <Prefix name="" IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,40 +14,61 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl</Import>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/3/BEM2.0#modifies"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#modifies"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#manufacturing_rule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </Declaration>
     <Declaration>
         <Class IRI="#selective_laser_melting_rule"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#rule:_FDM_overhangs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#additive_manufacturing_process_rule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/regulation.owl#&apos;is_subject_to&apos;"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#has_specified_value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rule:_stepped_overhangs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://edesign.ecs.umass.edu/ontologies/Framework2.0/FunctionalModel2.0.owl#affects"/>
+        <NamedIndividual IRI="#warningsteppedoverhangs"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#warningsteppedoverhangs"/>
+        <Class IRI="#manufacturing_process_rule"/>
     </Declaration>
     <Declaration>
         <Class IRI="#design_recommendation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#warning"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#powderbed_fusion_process_rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#design_warning"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#design_1"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#is_applied_to_by"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#has_consequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reqsteppedoverhangs"/>
     </Declaration>
     <Declaration>
         <Class IRI="#polyjet_process_rule"/>
@@ -57,39 +78,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#manufacturing_machine_rule"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#is_affected_by"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#rule:_FDM_overhangs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#additive_manufacturing_process_rule"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#rule:_stepped_overhangs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#manufacturing_process_rule"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#warning"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#design_warning"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#is_applied_to_by"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#reqsteppedoverhangs"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#applies_to"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
@@ -127,19 +115,6 @@
         <Class IRI="#additive_manufacturing_process_rule"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#powderbed_fusion_process_rule"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://edesign.ecs.umass.edu/ontologies/Framework2.0/FunctionalModel2.0.owl#affects"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                    <Class IRI="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion"/>
-                </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#selective_laser_melting_rule"/>
         <Class IRI="#powderbed_fusion_process_rule"/>
     </SubClassOf>
@@ -153,9 +128,9 @@
     </SubClassOf>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user_capability.owl#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
                 <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
@@ -171,15 +146,15 @@
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_consequence"/>
+            <ObjectProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/ergo-design.owl#has_consequence"/>
             <ObjectIntersectionOf>
                 <Class IRI="#warning"/>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                    <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                     <ObjectIntersectionOf>
-                        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user_capability.owl#requirement_specification"/>
+                        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
                         <ObjectSomeValuesFrom>
-                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
                             <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
@@ -189,7 +164,7 @@
         <NamedIndividual IRI="#rule:_stepped_overhangs"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
         <NamedIndividual IRI="#warningsteppedoverhangs"/>
         <NamedIndividual IRI="#reqsteppedoverhangs"/>
     </ObjectPropertyAssertion>
@@ -199,27 +174,8 @@
         <NamedIndividual IRI="#warningsteppedoverhangs"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/3/BEM2.0#modifies"/>
-        <ObjectProperty IRI="#modifies"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#applies_to"/>
-        <ObjectProperty IRI="http://edesign.ecs.umass.edu/ontologies/Framework2.0/FunctionalModel2.0.owl#affects"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#is_applied_to_by"/>
-        <ObjectProperty IRI="#is_affected_by"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#modifies"/>
-        <ObjectProperty IRI="http://edesign.ecs.umass.edu/ontologies/Framework2.0/FunctionalModel2.0.owl#affects"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="#is_affected_by"/>
-            <ObjectProperty IRI="#has_consequence"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/regulation.owl#&apos;is_subject_to&apos;"/>
     </SubObjectPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#has_specified_value"/>
@@ -239,11 +195,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#applies_to</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">applies to</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#design_recommendation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">design recommendation</Literal>
     </AnnotationAssertion>
@@ -256,11 +207,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#has_consequence</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has consequence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#is_affected_by</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is affected by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -316,6 +262,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/ergo-design.owl#recommendation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/regulation.owl#&apos;is_subject_to&apos;</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is affected by</Literal>
     </AnnotationAssertion>
 </Ontology>
 

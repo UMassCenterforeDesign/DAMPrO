@@ -12,7 +12,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0</Import>
+    <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl</Import>
     <Declaration>
         <NamedIndividual IRI="#slsrulevhole"/>
     </Declaration>
@@ -20,7 +20,13 @@
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down_facing_surface_specification"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/voids.owl#hole"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqfdmsteppedoverhang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#wall_less_that_0.4_mm_thick"/>
@@ -29,7 +35,13 @@
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#convex_overhang_radius_more_than_3_mm"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmsteppedoverhangs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#specifies_value"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_concave_fillet_radius"/>
@@ -44,16 +56,19 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmuprighthole"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#surface_roughness"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#non-perpendicular_hole_less_than_1_mm_specification"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmslotwidth"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule:_slm_perpendicular_hole"/>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#additive_manufacturing_process_rule"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#additive_manufacturing_process_rule"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule:_slm_perpendicular_hole"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmwallthickness"/>
@@ -77,6 +92,9 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconvexfilletradius"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#non-perpendicular_hole_greater_than_7mm_diameter_specification"/>
     </Declaration>
     <Declaration>
@@ -92,13 +110,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmperpendicularhole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangslarge"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhang"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangslarge"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmconcavefillet"/>
@@ -107,13 +122,16 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/10/TKA_design_refinement#recommendation_PBF_holes"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmuprighthole"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangsmedium"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangsmedium"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_with_diameter_less_than_0.7_mm"/>
@@ -137,19 +155,19 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/10/TKA_design_refinement#recommendation_pbf_overhangs"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/ergo-design.owl#recommendation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#stepped_overhang_greater_than_2_mm"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_slot_width"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmperpendicularhole"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhangsfillet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmperpendicularhole"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#slsrulethickness"/>
@@ -158,10 +176,13 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#preqrectanglewidth"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_slm_overhangs"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_overhang_radius_more_than_2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_slm_overhangs"/>
+        <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmunsupportedoverhangs"/>
@@ -179,130 +200,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmslot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/6/voids#hole"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down-facing_surface_manufactured_by_selective_laser_melting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#material_form_specification"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#surface_specification"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Sloped"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#specifies_value"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#angled_overhang"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#overhang_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_form_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#feature_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_profile_overhang"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_maximum_value"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_value"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#sacrificial_support"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_manufactured_perpendicular_to_build_plate"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thickness"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000055"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#overhang"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#convex_profile_overhang"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_minimum_value"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#convex_profile_form_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_manufactured_not_perpendicular_to_build_plate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#surface_roughness"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/ergo_design#recommendation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#tolerance_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#gap_specification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectLaserMelting"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#PBF_rule_overhangs_large"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_overhang_radius_more_than_2"/>
@@ -318,7 +219,7 @@
                             <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
                             </ObjectSomeValuesFrom>
                             <DataSomeValuesFrom>
                                 <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_value"/>
@@ -349,7 +250,7 @@
                             <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
                             </ObjectSomeValuesFrom>
                             <DataSomeValuesFrom>
                                 <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_value"/>
@@ -566,7 +467,7 @@
                         <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thickness"/>
                     </ObjectSomeValuesFrom>
                     <DataSomeValuesFrom>
-                        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#specifies_value"/>
+                        <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#specifies_value"/>
                         <DatatypeRestriction>
                             <Datatype abbreviatedIRI="xsd:decimal"/>
                             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -723,12 +624,12 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#material_form_under_150_micron"/>
@@ -755,20 +656,14 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/10/TKA_design_refinement#recommendation_PBF_holes"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/ergo_design#recommendation"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/ergo-design.owl#recommendation"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/10/TKA_design_refinement#recommendation_pbf_overhangs"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#overhang"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#overhang_specification"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
+            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#overhang_specification"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/10/TKA_design_refinement#recommendation_pbf_overhangs"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -777,7 +672,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
                 <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width"/>
@@ -787,47 +682,47 @@
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#sacrificial_support"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqfdmsteppedoverhang"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmconcavefillet"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmconcaveoverhang"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmconvexfillet"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
                 <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width"/>
@@ -837,17 +732,17 @@
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#sacrificial_support"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmsteppedoverhangs"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
                 <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Diameter"/>
@@ -857,7 +752,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
                 <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width"/>
@@ -875,11 +770,11 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <ObjectIntersectionOf>
-                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+                    <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
                     <ObjectSomeValuesFrom>
                         <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                         <ObjectIntersectionOf>
-                            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                 <ObjectIntersectionOf>
@@ -890,7 +785,7 @@
                                             <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
                                             <ObjectSomeValuesFrom>
                                                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
-                                                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                                                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
                                             </ObjectSomeValuesFrom>
                                             <DataSomeValuesFrom>
                                                 <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_value"/>
@@ -922,11 +817,11 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <ObjectIntersectionOf>
-                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+                    <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
                     <ObjectSomeValuesFrom>
                         <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                         <ObjectIntersectionOf>
-                            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                 <ObjectIntersectionOf>
@@ -937,7 +832,7 @@
                                             <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
                                             <ObjectSomeValuesFrom>
                                                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
-                                                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+                                                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
                                             </ObjectSomeValuesFrom>
                                             <DataSomeValuesFrom>
                                                 <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_value"/>
@@ -967,10 +862,10 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/ergo_design#has_consequence"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#surface_roughness"/>
+                    <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#surface_roughness"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -990,11 +885,11 @@
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <ObjectIntersectionOf>
-                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+                    <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
                     <ObjectSomeValuesFrom>
                         <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                         <ObjectIntersectionOf>
-                            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                 <ObjectIntersectionOf>
@@ -1039,41 +934,41 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_wall_thickness"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhang"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhangsfillet"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconvexfilletradius"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmslotwidth"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectIntersectionOf>
-            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#surface_roughness"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#surface_roughness"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmunsupportedoverhangs"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmuprighthole"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmwallthickness"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warnningslmsteppedoverhangs"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1084,7 +979,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/ergo_design#has_consequence"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
                 <ObjectIntersectionOf>
                     <ObjectSomeValuesFrom>
                         <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
@@ -1102,10 +997,10 @@
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                     <ObjectIntersectionOf>
-                        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+                        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#sacrificial_support"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
@@ -1121,11 +1016,11 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/ergo_design#has_consequence"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
+                <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl#warning"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                     <ObjectIntersectionOf>
-                        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#requirement_specification"/>
+                        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                             <ObjectIntersectionOf>
@@ -1156,7 +1051,7 @@
                         </ObjectSomeValuesFrom>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
-                            <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/6/voids#hole"/>
+                            <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/voids.owl#hole"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
