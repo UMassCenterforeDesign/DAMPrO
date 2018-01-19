@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/DAMPrO.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/tom/ontologies/2018/0/untitled-ontology-746"/>
+    <Prefix name="" IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/DAMPrO.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,6 +14,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/polyjet_rules.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/fdm_rules.owl</Import>
+    <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/am_machines.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/sls_rules.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/design.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl</Import>
