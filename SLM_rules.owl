@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules"
+     xml:base="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/SLM_rules.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules">
+     ontologyIRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/SLM_rules.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,6 +13,9 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0</Import>
+    <Declaration>
+        <NamedIndividual IRI="#slsrulevhole"/>
+    </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down_facing_surface_specification"/>
     </Declaration>
@@ -39,9 +42,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmuprighthole"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#material_form_under_150_micron"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#non-perpendicular_hole_less_than_1_mm_specification"/>
@@ -77,13 +77,7 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconvexfilletradius"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#slsrulevhole"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#non-perpendicular_hole_greater_than_7mm_diameter_specification"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#slsrulethickness"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmconcaveoverhang"/>
@@ -125,6 +119,9 @@
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_with_diameter_less_than_0.7_mm"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#material_form_under_150_micron"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule:_upright_hole"/>
     </Declaration>
     <Declaration>
@@ -155,6 +152,9 @@
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warning"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#slsrulethickness"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#preqrectanglewidth"/>
     </Declaration>
     <Declaration>
@@ -183,6 +183,126 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down-facing_surface_manufactured_by_selective_laser_melting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#material_form_specification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#surface_specification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Sloped"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/user_capability#specifies_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#angled_overhang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#overhang_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_form_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#feature_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_profile_overhang"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_maximum_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#dimension_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#sacrificial_support"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_manufactured_perpendicular_to_build_plate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Thickness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000055"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/3/ICAM2.0#overhang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#convex_profile_overhang"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#specifies_minimum_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#convex_profile_form_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_manufactured_not_perpendicular_to_build_plate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Width"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#surface_roughness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/8/ergo_design#recommendation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/4/dimensions#radius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#tolerance_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#gap_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectLaserMelting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#PBF_rule_overhangs_large"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_overhang_radius_more_than_2"/>
@@ -607,6 +727,10 @@
         <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#material_form_under_150_micron"/>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#material_form_specification"/>
     </SubClassOf>
@@ -616,10 +740,6 @@
             <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#&apos;is_subject_to&apos;"/>
             <NamedIndividual IRI="#slsrulethickness"/>
         </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
