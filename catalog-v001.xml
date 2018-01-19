@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1516391160692" name="http://www.semanticweb.org/tom/ontologies/2017/11/dmls_rules" uri="dmls_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516391160692" name="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules" uri="AM_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516391160692" name="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules" uri="SLM_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516391160692" name="http://www.semanticweb.org/tom/ontologies/2017/7/fdm" uri="fdm_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516391160692" name="http://www.semanticweb.org/tom/ontologies/2017/7/polyjet2" uri="polyjet_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516391160692" name="http://www.semanticweb.org/tom/ontologies/2017/7/sls_rules" uri="sls_rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1516391160692" name="http://www.semanticweb.org/tom/ontologies/2018/0/untitled-ontology-746" uri="DAMPrO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516391610652" name="http://www.semanticweb.org/tom/ontologies/2017/11/dmls_rules" uri="dmls_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516391610652" name="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules" uri="SLM_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516391610652" name="http://www.semanticweb.org/tom/ontologies/2017/7/fdm" uri="fdm_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516391610652" name="http://www.semanticweb.org/tom/ontologies/2017/7/polyjet2" uri="polyjet_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516391610652" name="http://www.semanticweb.org/tom/ontologies/2017/7/sls_rules" uri="sls_rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516391610652" name="http://www.semanticweb.org/tom/ontologies/2018/0/untitled-ontology-746" uri="DAMPrO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1516391610652" name="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/AM_rules.owl" uri="AM_rules.owl"/>
     </group>
 </catalog>
