@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/sls_rules.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/tom/ontologies/2017/7/sls_rules"/>
+    <Prefix name="" IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/sls_rules.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -17,10 +17,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slswarningthickness"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#slsruleoverhangslarge"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/user%20capability.owl#requirement_specification"/>
+        <NamedIndividual IRI="#slsruleoverhangslarge"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slswarnhorihole"/>
@@ -29,10 +29,10 @@
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#gap_specification_less_than_0.6"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#wall_less_than_600_micron_thick"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Length"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Length"/>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#wall_less_than_600_micron_thick"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_SLS_gap_length"/>
@@ -68,10 +68,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slsrulevhole"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqpbfoverhangsmedium"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slsrulethickness"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slsrulethickness"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqpbfoverhangsmedium"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slsrulethickhorizontalhole"/>
@@ -89,10 +89,10 @@
         <ObjectProperty IRI="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#is_about"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangsmedium"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangsmedium"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslsgapwidth"/>
@@ -104,10 +104,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slsreqvhole"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+        <NamedIndividual IRI="#slsruleoverhangssmall"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#slsruleoverhangssmall"/>
+        <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules#slswarningvhole"/>
@@ -442,7 +442,7 @@
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
-        <Class IRI="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#ObsoleteClass"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/11/dmls_rules#wall_less_than_1_mm_thick"/>

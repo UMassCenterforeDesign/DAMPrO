@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/SLM_rules.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/tom/ontologies/2017/7/SLM_rules"/>
+    <Prefix name="" IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/SLM_rules.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -23,10 +23,10 @@
         <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/voids.owl#hole"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqfdmsteppedoverhang"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#radius"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqfdmsteppedoverhang"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#wall_less_that_0.4_mm_thick"/>
@@ -56,10 +56,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmuprighthole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#surface_roughness"/>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#non-perpendicular_hole_less_than_1_mm_specification"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#non-perpendicular_hole_less_than_1_mm_specification"/>
+        <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/dimensions.owl#surface_roughness"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmslotwidth"/>
@@ -107,13 +107,13 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmconvexfillet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmperpendicularhole"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhang"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangslarge"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhang"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmperpendicularhole"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmconcavefillet"/>
@@ -122,16 +122,16 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/10/TKA_design_refinement#recommendation_PBF_holes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmuprighthole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/tom/ontologies/2017/8/regulation#specifies"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningpbfoverhangsmedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#hole_with_diameter_less_than_0.7_mm"/>
@@ -164,10 +164,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_slot_width"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhangsfillet"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmperpendicularhole"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#reqslmperpendicularhole"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#warningslmconcaveoverhangsfillet"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#slsrulethickness"/>
@@ -176,10 +176,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#preqrectanglewidth"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_slm_overhangs"/>
+        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_overhang_radius_more_than_2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#concave_overhang_radius_more_than_2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#rule_slm_overhangs"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#duration"/>
@@ -481,7 +481,7 @@
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000006"/>
-        <Class IRI="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <Class IRI="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#ObsoleteClass"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologylibrary.mil/CommonCore/Mid/QualityOntology#Diameter"/>
@@ -778,7 +778,7 @@
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                 <ObjectIntersectionOf>
-                                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#feature_specification"/>
+                                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#design_feature_specification"/>
                                     <ObjectSomeValuesFrom>
                                         <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                         <ObjectIntersectionOf>
@@ -825,7 +825,7 @@
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                 <ObjectIntersectionOf>
-                                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#feature_specification"/>
+                                    <Class IRI="http://www.semanticweb.org/tom/ontologies/2017/5/design#design_feature_specification"/>
                                     <ObjectSomeValuesFrom>
                                         <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                         <ObjectIntersectionOf>

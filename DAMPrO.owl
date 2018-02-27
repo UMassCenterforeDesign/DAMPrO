@@ -15,6 +15,7 @@
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/polyjet_rules.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/fdm_rules.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/am_machines.owl</Import>
+    <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/sls_rules.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/design.owl</Import>
     <Import>https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl</Import>
