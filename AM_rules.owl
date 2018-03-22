@@ -23,16 +23,16 @@
         <Class IRI="#selective_laser_melting_rule"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#rule:_FDM_overhangs"/>
+        <Class IRI="#additive_manufacturing_process_rule"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#additive_manufacturing_process_rule"/>
+        <NamedIndividual IRI="#rule:_FDM_overhangs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/regulation.owl#&apos;is_subject_to&apos;"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#has_specified_value"/>
+        <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/model.owl#has_specified_value"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#rule:_stepped_overhangs"/>
@@ -65,10 +65,10 @@
         <ObjectProperty IRI="#is_applied_to_by"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_consequence"/>
+        <NamedIndividual IRI="#reqsteppedoverhangs"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#reqsteppedoverhangs"/>
+        <ObjectProperty IRI="#has_consequence"/>
     </Declaration>
     <Declaration>
         <Class IRI="#polyjet_process_rule"/>
@@ -82,6 +82,10 @@
     <Declaration>
         <Class IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#sacrificial_support"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000055"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000001"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#additive_manufacturing_process_rule"/>
         <Class IRI="#manufacturing_process_rule"/>
@@ -178,14 +182,14 @@
         <ObjectProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/regulation.owl#&apos;is_subject_to&apos;"/>
     </SubObjectPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#has_specified_value"/>
+        <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/model.owl#has_specified_value"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
             <Class IRI="http://purl.obolibrary.org/obo/IAO_0000005"/>
         </ObjectSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#has_specified_value"/>
+        <DataProperty IRI="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/model.owl#has_specified_value"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <AnnotationAssertion>
